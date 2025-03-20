@@ -1,0 +1,74 @@
+---
+title: "WCS MERMAID Analysis Hub Template"
+subtitle: "Add subtitle here if useful"
+author: "Iain R. Caldwell"
+date: 03/20/2025
+format: 
+  html: #for website
+    embed-resources: true
+editor: visual
+code-fold: true
+code-summary: "Show the code"
+code-link: true
+toc: true #this adds a table of contents
+title-block-banner: "#f0f3f5"
+title-block-banner-color: "black"
+include-after-body: "footer.html" #if you use this make sure to add the "footer.html" file in the same folder as this file
+---
+
+------------------------------------------------------------------------
+
+## Summary/abstract
+
+Add a summary/abstract for the content piece here.
+
+------------------------------------------------------------------------
+
+## Context
+
+Give some context to the piece. What is the main problem or question being addressed? Is there some local context you want to add?
+
+------------------------------------------------------------------------
+
+## Heading 2 (add as many of these as you need)
+
+Add description of the section here.
+
+To get the following code block choose Insert –\> Executable Cell –\> R.
+
+```{r}
+#| label: Add a label for the code block here
+#| warning: false 
+
+####  Load packages and libraries ####
+## If this is the first time using mermaidr, install the package through "remotes"
+# install.packages("remotes")
+# remotes::install_github("data-mermaid/mermaidr")
+
+library(mermaidr) #package to download data from datamermaid.org
+```
+
+The `warning: false` option suppresses any warnings in the output.
+
+------------------------------------------------------------------------
+
+## Heading 3 
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
